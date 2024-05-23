@@ -1,0 +1,116 @@
+/* General styles for the app component */
+.containerPredicion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.15;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
+                 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .btn:hover,
+  .btn:focus,
+  .btn:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .predicted-price {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
+                 0 0 20px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+  
+  .textarea {
+    width: 100%;
+  
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  max-width: 480px; /* Adjust the max-width as needed */
+  min-width: 480px;
+  max-height: 250px; /* Adjust the max-width as needed */
+  min-height: 250px;
+  }
+  
+  .json-submit-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .json-submit-btn:hover,
+  .json-submit-btn:focus,
+  .json-submit-btn:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+    }
+  
+    .form-label {
+      font-size: 1rem;
+    }
+    .textarea{
+        max-width:fit-content; /* Adjust the max-width as needed */
+        min-width: fit-content;
+    }
+  }
+  
